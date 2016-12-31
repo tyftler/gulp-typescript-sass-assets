@@ -1,0 +1,76 @@
+{
+  "dev": {
+    "typescript": {
+      "src": "example/src/ts/**/*.ts",
+      "outDir": "example/dist/js",
+      "outExt": ".js",
+      "minify": false,
+      "sourceMaps": {
+        "use": true,
+        "external": false,
+        "externalRelDir": "",
+        "externalURLPrefix": ""
+      }
+    },
+    "sass": {
+      "src": "example/src/scss/**/*.scss",
+      "outDir": "example/dist/css",
+      "outExt": ".css",
+      "minify": false,
+      "sourceMaps": {
+        "use": true,
+        "external": false,
+        "externalRelDir": "",
+        "externalURLPrefix": ""
+      }
+    },
+    "assets": [
+      {
+        "src": "node_modules/font-awesome/css/font-awesome.min.css",
+        "outDir": "example/dist/css"
+      },
+      {
+        "src": "node_modules/font-awesome/fonts/**/*",
+        "outDir": "example/dist/fonts"
+      }
+    ],
+    "clean": []
+  },
+  "prod": {
+    "typescript": {
+      "src": "example/src/ts/**/*.ts",
+      "outDir": "example/dist/js",
+      "outExt": ".js",
+      "minify": true,
+      "sourceMaps": {
+        "use": true,
+        "external": true,
+        "externalRelDir": "../maps/js",
+        "externalURLPrefix": ""
+      }
+    },
+    "sass": {
+      "src": "example/src/scss/**/*.scss",
+      "outDir": "example/dist/css",
+      "outExt": ".css",
+      "minify": true,
+      "sourceMaps": {
+        "use": true,
+        "external": true,
+        "externalRelDir": "../maps/css",
+        "externalURLPrefix": ""
+      }
+    },
+    "assets": [
+      {
+        "src": "node_modules/font-awesome/css/font-awesome.min.css",
+        "outDir": "example/dist/css"
+      },
+      {
+        "src": "node_modules/font-awesome/fonts/**/*",
+        "outDir": "example/dist/fonts"
+      }
+    ],
+    "clean": []
+  }
+}
